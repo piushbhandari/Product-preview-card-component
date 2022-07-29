@@ -19,9 +19,107 @@ li {
 a {
   text-decoration: none;
 }
-
 .flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+
+/* -------------- */
+
+body {
+  background: #f2eae2;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border-radius: 1rem;
+  max-width: 60rem;
+}
+.card > * {
+  flex: 1;
+}
+.card__main-img {
+  height: 45rem;
+}
+.card__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.card__textbox {
+  background: white;
+  padding: 3.2rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.card__sub-head {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 2rem;
+  letter-spacing: 5px;
+  color: #6c7289;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+}
+.card__header {
+  margin-bottom: 2.4rem;
+  color: #1c234b;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+}
+.card__description {
+  margin-bottom: 2.9rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+  color: #6c7389;
+}
+.card__price-box {
+  margin-bottom: 3rem;
+  justify-content: flex-start;
+  gap: 1.9rem;
+}
+
+.card__total-price {
+  color: #3d8168;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+}
+.card__cut-price {
+  text-decoration: line-through;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+  color: #6c7289;
+}
+.card__add-to-card {
+  font-family: "Montserrat", sans-serif;
+  padding: 1.5rem 0;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: white;
+  background-color: #1a4032;
+  border-radius: 10px;
+  width: 100%;
 }
